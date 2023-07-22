@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS MentorBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>CS MentorBot</h1>
+    <div class="chat-log" id="chat-log">
+        <!-- js script will render the chat log here -->
+    </div>
+    <span id="typing-indicator" style="display: none;">
+        CS MentorBot is typing...
+    </span>
+    <form onsubmit="return askQuestion()">
+        <label for="question">Enter your question:</label><br>
+        <input type="text" id="question" name="question" required><br>
+        <input type="submit" value="Ask">
+        <button type="button" onclick="clearChat()">Clear Chat</button>
+        
+    </form>
+    <footer>Created by Aaron Patel</footer>
+    <script src="{{ url_for('static', filename='chatbot.js') }}" defer></script>
+</body>
+</html>

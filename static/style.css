@@ -1,0 +1,115 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0;
+    color: rgba(0, 0, 0, 0.925);
+    background-color: #2188FF;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: xx-large;
+}
+
+.chat-container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.chat-log {
+    font-family: 'Source Code Pro', monospace;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    max-height: 400px;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0 auto 10px;
+}
+
+.message {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.user-message {
+    color: #2AC4A8;
+}
+
+.assistant-message {
+    color: #2188FF;
+}
+
+.typing-indicator {
+    color: #777;
+}
+
+label {
+    color: white;
+    margin-left: 20px;
+}
+
+input[type="submit"] {
+    background-color: #2AC4A8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+    font: inherit;
+    font-size: small;
+}
+
+input[type="text"] {
+    margin: 0 auto;
+    width: 1220px;
+    height: 30px;
+    border-radius: 4px;
+    align-items: center;
+    display: block;
+    margin-bottom: -5px;
+}
+
+button {
+    background-color: #2AC4A8;
+    color: #fff;
+    border: none;
+    font: inherit;
+    font-size: small;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: #2188FF;
+}
+
+input[type="submit"]:hover {
+    background-color: #2188FF;
+}
+
+button:focus {
+    outline: none;
+}
